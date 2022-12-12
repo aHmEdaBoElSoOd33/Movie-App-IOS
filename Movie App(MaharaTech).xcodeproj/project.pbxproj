@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E7EA40C877BA7FAE91C1F0A /* Pods_Movie_App_MaharaTech_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8BEC5246EC510B892ED107 /* Pods_Movie_App_MaharaTech_Tests.framework */; };
+		3E14C0FA1C528772D0E74C89 /* Pods_Movie_App_MaharaTech__Movie_App_MaharaTech_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1590CD7B39849DCA80A98F2 /* Pods_Movie_App_MaharaTech__Movie_App_MaharaTech_UITests.framework */; };
+		8EE82C8C113ED58515E87E9B /* Pods_Movie_App_MaharaTech_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC5D41AEA0E602777AC2366 /* Pods_Movie_App_MaharaTech_.framework */; };
+		E21DE6482944A6D9002C8DD1 /* ReviewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21DE6472944A6D9002C8DD1 /* ReviewsCell.swift */; };
+		E22170EA29322FA400F58047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22170E929322FA400F58047 /* AppDelegate.swift */; };
+		E22170EC29322FA400F58047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22170EB29322FA400F58047 /* SceneDelegate.swift */; };
+		E22170EE29322FA400F58047 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22170ED29322FA400F58047 /* MoviesVC.swift */; };
+		E22170F129322FA400F58047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22170EF29322FA400F58047 /* Main.storyboard */; };
+		E22170F329322FA600F58047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22170F229322FA600F58047 /* Assets.xcassets */; };
+		E22170F629322FA600F58047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22170F429322FA600F58047 /* LaunchScreen.storyboard */; };
+		E221710129322FA600F58047 /* Movie_App_MaharaTech_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221710029322FA600F58047 /* Movie_App_MaharaTech_Tests.swift */; };
+		E221710B29322FA600F58047 /* Movie_App_MaharaTech_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221710A29322FA600F58047 /* Movie_App_MaharaTech_UITests.swift */; };
+		E221710D29322FA600F58047 /* Movie_App_MaharaTech_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221710C29322FA600F58047 /* Movie_App_MaharaTech_UITestsLaunchTests.swift */; };
+		E2309E90293EB51600083E81 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2309E8F293EB51600083E81 /* DetailsVC.swift */; };
+		E27999DB2943A27400F1E8B4 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27999DA2943A27400F1E8B4 /* Review.swift */; };
+		E27C054129462D49000BA99E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C054029462D49000BA99E /* LoginVC.swift */; };
+		E2A1F142293E331800C0547F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1F141293E331800C0547F /* Movie.swift */; };
+		E2A1F144293E477500C0547F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1F143293E477500C0547F /* MovieCell.swift */; };
+		E2AA22462944BD1B00D61479 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA22452944BD1B00D61479 /* MovieApi.swift */; };
+		E2AA22482944BD3300D61479 /* DetailsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA22472944BD3300D61479 /* DetailsApi.swift */; };
+		E2AA224A2944BD4000D61479 /* ReviewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA22492944BD4000D61479 /* ReviewsApi.swift */; };
+		E2AA224C2944C4EE00D61479 /* ReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA224B2944C4EE00D61479 /* ReviewsVC.swift */; };
+		E2FFCCBB294234DF001F4D37 /* YTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FFCCBA294234DF001F4D37 /* YTCell.swift */; };
+		E2FFCCBD29423772001F4D37 /* Youtube.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FFCCBC29423772001F4D37 /* Youtube.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E22170FD29322FA600F58047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E22170DE29322FA400F58047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22170E529322FA400F58047;
+			remoteInfo = "Movie App(MaharaTech)";
+		};
+		E221710729322FA600F58047 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E22170DE29322FA400F58047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E22170E529322FA400F58047;
+			remoteInfo = "Movie App(MaharaTech)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A8BEC5246EC510B892ED107 /* Pods_Movie_App_MaharaTech_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_App_MaharaTech_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55996F22F95FE300903B2175 /* Pods-Movie App(MaharaTech).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App(MaharaTech).release.xcconfig"; path = "Target Support Files/Pods-Movie App(MaharaTech)/Pods-Movie App(MaharaTech).release.xcconfig"; sourceTree = "<group>"; };
+		988B70E9A8D81E4727C546C8 /* Pods-Movie App(MaharaTech)Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App(MaharaTech)Tests.release.xcconfig"; path = "Target Support Files/Pods-Movie App(MaharaTech)Tests/Pods-Movie App(MaharaTech)Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B1590CD7B39849DCA80A98F2 /* Pods_Movie_App_MaharaTech__Movie_App_MaharaTech_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_App_MaharaTech__Movie_App_MaharaTech_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B392286C3C6389210B17761E /* Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.debug.xcconfig"; path = "Target Support Files/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB719F834F107A9C79736003 /* Pods-Movie App(MaharaTech).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App(MaharaTech).debug.xcconfig"; path = "Target Support Files/Pods-Movie App(MaharaTech)/Pods-Movie App(MaharaTech).debug.xcconfig"; sourceTree = "<group>"; };
+		CDC5D41AEA0E602777AC2366 /* Pods_Movie_App_MaharaTech_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movie_App_MaharaTech_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D72E1CED46D5C1E179FCCD3E /* Pods-Movie App(MaharaTech)Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App(MaharaTech)Tests.debug.xcconfig"; path = "Target Support Files/Pods-Movie App(MaharaTech)Tests/Pods-Movie App(MaharaTech)Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E21DE6472944A6D9002C8DD1 /* ReviewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsCell.swift; sourceTree = "<group>"; };
+		E22170E629322FA400F58047 /* Movie App(MaharaTech).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie App(MaharaTech).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22170E929322FA400F58047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E22170EB29322FA400F58047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E22170ED29322FA400F58047 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
+		E22170F029322FA400F58047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E22170F229322FA600F58047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E22170F529322FA600F58047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E22170F729322FA600F58047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22170FC29322FA600F58047 /* Movie App(MaharaTech)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie App(MaharaTech)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E221710029322FA600F58047 /* Movie_App_MaharaTech_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_App_MaharaTech_Tests.swift; sourceTree = "<group>"; };
+		E221710629322FA600F58047 /* Movie App(MaharaTech)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie App(MaharaTech)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E221710A29322FA600F58047 /* Movie_App_MaharaTech_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_App_MaharaTech_UITests.swift; sourceTree = "<group>"; };
+		E221710C29322FA600F58047 /* Movie_App_MaharaTech_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_App_MaharaTech_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2309E8F293EB51600083E81 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		E27999DA2943A27400F1E8B4 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		E27C054029462D49000BA99E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E2A1F141293E331800C0547F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E2A1F143293E477500C0547F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		E2AA22452944BD1B00D61479 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
+		E2AA22472944BD3300D61479 /* DetailsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsApi.swift; sourceTree = "<group>"; };
+		E2AA22492944BD4000D61479 /* ReviewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsApi.swift; sourceTree = "<group>"; };
+		E2AA224B2944C4EE00D61479 /* ReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsVC.swift; sourceTree = "<group>"; };
+		E2FFCCBA294234DF001F4D37 /* YTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTCell.swift; sourceTree = "<group>"; };
+		E2FFCCBC29423772001F4D37 /* Youtube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube.swift; sourceTree = "<group>"; };
+		FF46B43FBDAEE3FE4A31AA91 /* Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig"; path = "Target Support Files/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E22170E329322FA400F58047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE82C8C113ED58515E87E9B /* Pods_Movie_App_MaharaTech_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22170F929322FA600F58047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7EA40C877BA7FAE91C1F0A /* Pods_Movie_App_MaharaTech_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E221710329322FA600F58047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E14C0FA1C528772D0E74C89 /* Pods_Movie_App_MaharaTech__Movie_App_MaharaTech_UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FA010B3CF6B7F3872A478D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDC5D41AEA0E602777AC2366 /* Pods_Movie_App_MaharaTech_.framework */,
+				B1590CD7B39849DCA80A98F2 /* Pods_Movie_App_MaharaTech__Movie_App_MaharaTech_UITests.framework */,
+				3A8BEC5246EC510B892ED107 /* Pods_Movie_App_MaharaTech_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72B70F091C0D830DA68B096C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB719F834F107A9C79736003 /* Pods-Movie App(MaharaTech).debug.xcconfig */,
+				55996F22F95FE300903B2175 /* Pods-Movie App(MaharaTech).release.xcconfig */,
+				B392286C3C6389210B17761E /* Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.debug.xcconfig */,
+				FF46B43FBDAEE3FE4A31AA91 /* Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig */,
+				D72E1CED46D5C1E179FCCD3E /* Pods-Movie App(MaharaTech)Tests.debug.xcconfig */,
+				988B70E9A8D81E4727C546C8 /* Pods-Movie App(MaharaTech)Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E22170DD29322FA400F58047 = {
+			isa = PBXGroup;
+			children = (
+				E22170E829322FA400F58047 /* Movie App(MaharaTech) */,
+				E22170FF29322FA600F58047 /* Movie App(MaharaTech)Tests */,
+				E221710929322FA600F58047 /* Movie App(MaharaTech)UITests */,
+				E22170E729322FA400F58047 /* Products */,
+				72B70F091C0D830DA68B096C /* Pods */,
+				2FA010B3CF6B7F3872A478D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E22170E729322FA400F58047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E22170E629322FA400F58047 /* Movie App(MaharaTech).app */,
+				E22170FC29322FA600F58047 /* Movie App(MaharaTech)Tests.xctest */,
+				E221710629322FA600F58047 /* Movie App(MaharaTech)UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E22170E829322FA400F58047 /* Movie App(MaharaTech) */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA22402944BC1700D61479 /* Model */,
+				E2AA22412944BC2600D61479 /* Controller */,
+				E2AA22422944BC3C00D61479 /* View */,
+				E22170F229322FA600F58047 /* Assets.xcassets */,
+				E22170F729322FA600F58047 /* Info.plist */,
+			);
+			path = "Movie App(MaharaTech)";
+			sourceTree = "<group>";
+		};
+		E22170FF29322FA600F58047 /* Movie App(MaharaTech)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E221710029322FA600F58047 /* Movie_App_MaharaTech_Tests.swift */,
+			);
+			path = "Movie App(MaharaTech)Tests";
+			sourceTree = "<group>";
+		};
+		E221710929322FA600F58047 /* Movie App(MaharaTech)UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E221710A29322FA600F58047 /* Movie_App_MaharaTech_UITests.swift */,
+				E221710C29322FA600F58047 /* Movie_App_MaharaTech_UITestsLaunchTests.swift */,
+			);
+			path = "Movie App(MaharaTech)UITests";
+			sourceTree = "<group>";
+		};
+		E2AA22402944BC1700D61479 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA22432944BCA000D61479 /* Pojo */,
+				E2AA22442944BCBB00D61479 /* DataBaseManager */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2AA22412944BC2600D61479 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E22170E929322FA400F58047 /* AppDelegate.swift */,
+				E22170EB29322FA400F58047 /* SceneDelegate.swift */,
+				E27C054029462D49000BA99E /* LoginVC.swift */,
+				E22170ED29322FA400F58047 /* MoviesVC.swift */,
+				E2A1F143293E477500C0547F /* MovieCell.swift */,
+				E2309E8F293EB51600083E81 /* DetailsVC.swift */,
+				E2FFCCBA294234DF001F4D37 /* YTCell.swift */,
+				E2AA224B2944C4EE00D61479 /* ReviewsVC.swift */,
+				E21DE6472944A6D9002C8DD1 /* ReviewsCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E2AA22422944BC3C00D61479 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E22170EF29322FA400F58047 /* Main.storyboard */,
+				E22170F429322FA600F58047 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2AA22432944BCA000D61479 /* Pojo */ = {
+			isa = PBXGroup;
+			children = (
+				E2A1F141293E331800C0547F /* Movie.swift */,
+				E27999DA2943A27400F1E8B4 /* Review.swift */,
+				E2FFCCBC29423772001F4D37 /* Youtube.swift */,
+			);
+			path = Pojo;
+			sourceTree = "<group>";
+		};
+		E2AA22442944BCBB00D61479 /* DataBaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				E2AA22452944BD1B00D61479 /* MovieApi.swift */,
+				E2AA22472944BD3300D61479 /* DetailsApi.swift */,
+				E2AA22492944BD4000D61479 /* ReviewsApi.swift */,
+			);
+			path = DataBaseManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E22170E529322FA400F58047 /* Movie App(MaharaTech) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E221711029322FA600F58047 /* Build configuration list for PBXNativeTarget "Movie App(MaharaTech)" */;
+			buildPhases = (
+				A88B93B0A5CBFE4545CFFCFD /* [CP] Check Pods Manifest.lock */,
+				E22170E229322FA400F58047 /* Sources */,
+				E22170E329322FA400F58047 /* Frameworks */,
+				E22170E429322FA400F58047 /* Resources */,
+				1D70D1E137D3319CC16E3665 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Movie App(MaharaTech)";
+			productName = "Movie App(MaharaTech)";
+			productReference = E22170E629322FA400F58047 /* Movie App(MaharaTech).app */;
+			productType = "com.apple.product-type.application";
+		};
+		E22170FB29322FA600F58047 /* Movie App(MaharaTech)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E221711329322FA600F58047 /* Build configuration list for PBXNativeTarget "Movie App(MaharaTech)Tests" */;
+			buildPhases = (
+				2904E4D651B261C85A386F12 /* [CP] Check Pods Manifest.lock */,
+				E22170F829322FA600F58047 /* Sources */,
+				E22170F929322FA600F58047 /* Frameworks */,
+				E22170FA29322FA600F58047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E22170FE29322FA600F58047 /* PBXTargetDependency */,
+			);
+			name = "Movie App(MaharaTech)Tests";
+			productName = "Movie App(MaharaTech)Tests";
+			productReference = E22170FC29322FA600F58047 /* Movie App(MaharaTech)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E221710529322FA600F58047 /* Movie App(MaharaTech)UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E221711629322FA600F58047 /* Build configuration list for PBXNativeTarget "Movie App(MaharaTech)UITests" */;
+			buildPhases = (
+				64CE505558E99EF3641F59FB /* [CP] Check Pods Manifest.lock */,
+				E221710229322FA600F58047 /* Sources */,
+				E221710329322FA600F58047 /* Frameworks */,
+				E221710429322FA600F58047 /* Resources */,
+				D37EC9B7CC5FB23126D9B84A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E221710829322FA600F58047 /* PBXTargetDependency */,
+			);
+			name = "Movie App(MaharaTech)UITests";
+			productName = "Movie App(MaharaTech)UITests";
+			productReference = E221710629322FA600F58047 /* Movie App(MaharaTech)UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E22170DE29322FA400F58047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E22170E529322FA400F58047 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					E22170FB29322FA600F58047 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E22170E529322FA400F58047;
+					};
+					E221710529322FA600F58047 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E22170E529322FA400F58047;
+					};
+				};
+			};
+			buildConfigurationList = E22170E129322FA400F58047 /* Build configuration list for PBXProject "Movie App(MaharaTech)" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E22170DD29322FA400F58047;
+			productRefGroup = E22170E729322FA400F58047 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E22170E529322FA400F58047 /* Movie App(MaharaTech) */,
+				E22170FB29322FA600F58047 /* Movie App(MaharaTech)Tests */,
+				E221710529322FA600F58047 /* Movie App(MaharaTech)UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E22170E429322FA400F58047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22170F629322FA600F58047 /* LaunchScreen.storyboard in Resources */,
+				E22170F329322FA600F58047 /* Assets.xcassets in Resources */,
+				E22170F129322FA400F58047 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22170FA29322FA600F58047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E221710429322FA600F58047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D70D1E137D3319CC16E3665 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movie App(MaharaTech)/Pods-Movie App(MaharaTech)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movie App(MaharaTech)/Pods-Movie App(MaharaTech)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Movie App(MaharaTech)/Pods-Movie App(MaharaTech)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2904E4D651B261C85A386F12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movie App(MaharaTech)Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64CE505558E99EF3641F59FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A88B93B0A5CBFE4545CFFCFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Movie App(MaharaTech)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D37EC9B7CC5FB23126D9B84A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E22170E229322FA400F58047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FFCCBD29423772001F4D37 /* Youtube.swift in Sources */,
+				E2AA22462944BD1B00D61479 /* MovieApi.swift in Sources */,
+				E22170EE29322FA400F58047 /* MoviesVC.swift in Sources */,
+				E2309E90293EB51600083E81 /* DetailsVC.swift in Sources */,
+				E22170EA29322FA400F58047 /* AppDelegate.swift in Sources */,
+				E2AA22482944BD3300D61479 /* DetailsApi.swift in Sources */,
+				E21DE6482944A6D9002C8DD1 /* ReviewsCell.swift in Sources */,
+				E2A1F142293E331800C0547F /* Movie.swift in Sources */,
+				E27999DB2943A27400F1E8B4 /* Review.swift in Sources */,
+				E2FFCCBB294234DF001F4D37 /* YTCell.swift in Sources */,
+				E2A1F144293E477500C0547F /* MovieCell.swift in Sources */,
+				E2AA224C2944C4EE00D61479 /* ReviewsVC.swift in Sources */,
+				E2AA224A2944BD4000D61479 /* ReviewsApi.swift in Sources */,
+				E22170EC29322FA400F58047 /* SceneDelegate.swift in Sources */,
+				E27C054129462D49000BA99E /* LoginVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E22170F829322FA600F58047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E221710129322FA600F58047 /* Movie_App_MaharaTech_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E221710229322FA600F58047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E221710B29322FA600F58047 /* Movie_App_MaharaTech_UITests.swift in Sources */,
+				E221710D29322FA600F58047 /* Movie_App_MaharaTech_UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E22170FE29322FA600F58047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22170E529322FA400F58047 /* Movie App(MaharaTech) */;
+			targetProxy = E22170FD29322FA600F58047 /* PBXContainerItemProxy */;
+		};
+		E221710829322FA600F58047 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E22170E529322FA400F58047 /* Movie App(MaharaTech) */;
+			targetProxy = E221710729322FA600F58047 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E22170EF29322FA400F58047 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E22170F029322FA400F58047 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E22170F429322FA600F58047 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E22170F529322FA600F58047 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E221710E29322FA600F58047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E221710F29322FA600F58047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E221711129322FA600F58047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB719F834F107A9C79736003 /* Pods-Movie App(MaharaTech).debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU3L58K3P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Movie App(MaharaTech)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.Movie-App-MaharaTech-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E221711229322FA600F58047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55996F22F95FE300903B2175 /* Pods-Movie App(MaharaTech).release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU3L58K3P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Movie App(MaharaTech)/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.Movie-App-MaharaTech-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E221711429322FA600F58047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D72E1CED46D5C1E179FCCD3E /* Pods-Movie App(MaharaTech)Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU3L58K3P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.Movie-App-MaharaTech-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movie App(MaharaTech).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Movie App(MaharaTech)";
+			};
+			name = Debug;
+		};
+		E221711529322FA600F58047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 988B70E9A8D81E4727C546C8 /* Pods-Movie App(MaharaTech)Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU3L58K3P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.Movie-App-MaharaTech-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movie App(MaharaTech).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Movie App(MaharaTech)";
+			};
+			name = Release;
+		};
+		E221711729322FA600F58047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B392286C3C6389210B17761E /* Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU3L58K3P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.Movie-App-MaharaTech-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Movie App(MaharaTech)";
+			};
+			name = Debug;
+		};
+		E221711829322FA600F58047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF46B43FBDAEE3FE4A31AA91 /* Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NU3L58K3P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmed.Movie-App-MaharaTech-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Movie App(MaharaTech)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E22170E129322FA400F58047 /* Build configuration list for PBXProject "Movie App(MaharaTech)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E221710E29322FA600F58047 /* Debug */,
+				E221710F29322FA600F58047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E221711029322FA600F58047 /* Build configuration list for PBXNativeTarget "Movie App(MaharaTech)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E221711129322FA600F58047 /* Debug */,
+				E221711229322FA600F58047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E221711329322FA600F58047 /* Build configuration list for PBXNativeTarget "Movie App(MaharaTech)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E221711429322FA600F58047 /* Debug */,
+				E221711529322FA600F58047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E221711629322FA600F58047 /* Build configuration list for PBXNativeTarget "Movie App(MaharaTech)UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E221711729322FA600F58047 /* Debug */,
+				E221711829322FA600F58047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E22170DE29322FA400F58047 /* Project object */;
+}

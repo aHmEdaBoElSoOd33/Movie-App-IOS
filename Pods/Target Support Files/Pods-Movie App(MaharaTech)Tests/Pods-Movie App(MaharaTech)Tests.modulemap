@@ -1,0 +1,6 @@
+framework module Pods_Movie_App_MaharaTech_Tests {
+  umbrella header "Pods-Movie App(MaharaTech)Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

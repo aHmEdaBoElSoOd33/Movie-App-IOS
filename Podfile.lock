@@ -1,0 +1,26 @@
+PODS:
+  - Cosmos (23.0.0)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+  - youtube-ios-player-helper-swift (1.1)
+
+DEPENDENCIES:
+  - Cosmos
+  - SDWebImage
+  - youtube-ios-player-helper-swift
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - SDWebImage
+    - youtube-ios-player-helper-swift
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+  youtube-ios-player-helper-swift: 51a3c5325317c8271d0c7985c1bbe5a252ffb2fd
+
+PODFILE CHECKSUM: a05f468041f64c9653431f74729fed836619f6b3
+
+COCOAPODS: 1.11.3
