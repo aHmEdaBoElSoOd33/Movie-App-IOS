@@ -20,6 +20,7 @@
 		E221710129322FA600F58047 /* Movie_App_MaharaTech_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221710029322FA600F58047 /* Movie_App_MaharaTech_Tests.swift */; };
 		E221710B29322FA600F58047 /* Movie_App_MaharaTech_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221710A29322FA600F58047 /* Movie_App_MaharaTech_UITests.swift */; };
 		E221710D29322FA600F58047 /* Movie_App_MaharaTech_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E221710C29322FA600F58047 /* Movie_App_MaharaTech_UITestsLaunchTests.swift */; };
+		E22EC59A2947EE6E003CD68D /* MoviesCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E22EC5982947EE6E003CD68D /* MoviesCoreData.xcdatamodeld */; };
 		E2309E90293EB51600083E81 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2309E8F293EB51600083E81 /* DetailsVC.swift */; };
 		E27999DB2943A27400F1E8B4 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27999DA2943A27400F1E8B4 /* Review.swift */; };
 		E27C054129462D49000BA99E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27C054029462D49000BA99E /* LoginVC.swift */; };
@@ -29,6 +30,7 @@
 		E2AA22482944BD3300D61479 /* DetailsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA22472944BD3300D61479 /* DetailsApi.swift */; };
 		E2AA224A2944BD4000D61479 /* ReviewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA22492944BD4000D61479 /* ReviewsApi.swift */; };
 		E2AA224C2944C4EE00D61479 /* ReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA224B2944C4EE00D61479 /* ReviewsVC.swift */; };
+		E2CFD4892951BE5900316BD8 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFD4882951BE5900316BD8 /* RegisterVC.swift */; };
 		E2FFCCBB294234DF001F4D37 /* YTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FFCCBA294234DF001F4D37 /* YTCell.swift */; };
 		E2FFCCBD29423772001F4D37 /* Youtube.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FFCCBC29423772001F4D37 /* Youtube.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,7 @@
 		E221710629322FA600F58047 /* Movie App(MaharaTech)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie App(MaharaTech)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E221710A29322FA600F58047 /* Movie_App_MaharaTech_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_App_MaharaTech_UITests.swift; sourceTree = "<group>"; };
 		E221710C29322FA600F58047 /* Movie_App_MaharaTech_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_App_MaharaTech_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E22EC5992947EE6E003CD68D /* MoviesCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoviesCoreData.xcdatamodel; sourceTree = "<group>"; };
 		E2309E8F293EB51600083E81 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		E27999DA2943A27400F1E8B4 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		E27C054029462D49000BA99E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 		E2AA22472944BD3300D61479 /* DetailsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsApi.swift; sourceTree = "<group>"; };
 		E2AA22492944BD4000D61479 /* ReviewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsApi.swift; sourceTree = "<group>"; };
 		E2AA224B2944C4EE00D61479 /* ReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsVC.swift; sourceTree = "<group>"; };
+		E2CFD4882951BE5900316BD8 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		E2FFCCBA294234DF001F4D37 /* YTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTCell.swift; sourceTree = "<group>"; };
 		E2FFCCBC29423772001F4D37 /* Youtube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube.swift; sourceTree = "<group>"; };
 		FF46B43FBDAEE3FE4A31AA91 /* Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig"; path = "Target Support Files/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				E2AA22422944BC3C00D61479 /* View */,
 				E22170F229322FA600F58047 /* Assets.xcassets */,
 				E22170F729322FA600F58047 /* Info.plist */,
+				E22EC5982947EE6E003CD68D /* MoviesCoreData.xcdatamodeld */,
 			);
 			path = "Movie App(MaharaTech)";
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 				E22170E929322FA400F58047 /* AppDelegate.swift */,
 				E22170EB29322FA400F58047 /* SceneDelegate.swift */,
 				E27C054029462D49000BA99E /* LoginVC.swift */,
+				E2CFD4882951BE5900316BD8 /* RegisterVC.swift */,
 				E22170ED29322FA400F58047 /* MoviesVC.swift */,
 				E2A1F143293E477500C0547F /* MovieCell.swift */,
 				E2309E8F293EB51600083E81 /* DetailsVC.swift */,
@@ -486,11 +492,13 @@
 				E2AA22462944BD1B00D61479 /* MovieApi.swift in Sources */,
 				E22170EE29322FA400F58047 /* MoviesVC.swift in Sources */,
 				E2309E90293EB51600083E81 /* DetailsVC.swift in Sources */,
+				E2CFD4892951BE5900316BD8 /* RegisterVC.swift in Sources */,
 				E22170EA29322FA400F58047 /* AppDelegate.swift in Sources */,
 				E2AA22482944BD3300D61479 /* DetailsApi.swift in Sources */,
 				E21DE6482944A6D9002C8DD1 /* ReviewsCell.swift in Sources */,
 				E2A1F142293E331800C0547F /* Movie.swift in Sources */,
 				E27999DB2943A27400F1E8B4 /* Review.swift in Sources */,
+				E22EC59A2947EE6E003CD68D /* MoviesCoreData.xcdatamodeld in Sources */,
 				E2FFCCBB294234DF001F4D37 /* YTCell.swift in Sources */,
 				E2A1F144293E477500C0547F /* MovieCell.swift in Sources */,
 				E2AA224C2944C4EE00D61479 /* ReviewsVC.swift in Sources */,
@@ -844,6 +852,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E22EC5982947EE6E003CD68D /* MoviesCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E22EC5992947EE6E003CD68D /* MoviesCoreData.xcdatamodel */,
+			);
+			currentVersion = E22EC5992947EE6E003CD68D /* MoviesCoreData.xcdatamodel */;
+			path = MoviesCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E22170DE29322FA400F58047 /* Project object */;
 }

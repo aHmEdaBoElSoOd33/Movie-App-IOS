@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Youtube : Codable {
+class Youtube {
     
     var key : String?
     

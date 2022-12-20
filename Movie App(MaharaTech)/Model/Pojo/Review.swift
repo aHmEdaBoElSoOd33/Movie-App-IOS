@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Review : Codable {
+class Review {
     
     var name : String?
     var content : String?

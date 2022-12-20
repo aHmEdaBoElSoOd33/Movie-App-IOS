@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class Movie : Codable {
+class Movie {
      
     
     var id : Int?
