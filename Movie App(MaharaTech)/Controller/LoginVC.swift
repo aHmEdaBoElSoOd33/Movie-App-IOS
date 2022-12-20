@@ -17,9 +17,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
         
     var db : OpaquePointer?
-    var name : String?
-    var email : String?
-    var password : String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,17 +87,15 @@ class LoginVC: UIViewController {
                     
                     let VC = self.storyboard?.instantiateViewController(withIdentifier: "MovieVC") as! MoviesVC
                     VC.modalPresentationStyle = .fullScreen
-                   self.present(VC, animated: true)
+                    self.present(VC, animated: true)
                     
-                }else if usernameTxt.text == "" || passwordTxt.text == "" {
-                    errorHandel.text = "Enter Username & Password"
-                }else{
-                    errorHandel.text = "Username or Password is Wrong , Try Again"
+                }else if usernameTxt.text == email && passwordTxt.text != password  {
+                    errorHandel.text = "Wrong Password try again"
+                }else {
+                    errorHandel.text = "Account not exist"
                 }
-                
             }
-           
-            //self.tableView.reloadData()
+ 
         }else{
             print("query statment not prepared")
         }
@@ -122,7 +118,7 @@ class LoginVC: UIViewController {
     @IBAction func registerVC(_ sender: Any) {
         
        let VC = storyboard?.instantiateViewController(identifier: "RegisterVC") as! RegisterVC
-        VC.modalPresentationStyle = .fullScreen
+       VC.modalPresentationStyle = .fullScreen
         //VC.db = self.db
         self.present(VC, animated: true)
         
@@ -130,22 +126,11 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginBtnAction(_ sender: Any) {
-        
-        query(db: db)
-        
-//        if usernameTxt.text == "ahmed@gmail.com" && passwordTxt.text == "111111" {
-//
-//            let userdefults = UserDefaults.standard
-//            userdefults.set(true, forKey: "loginstate")
-//
-//            let VC = self.storyboard?.instantiateViewController(withIdentifier: "MovieVC") as! MoviesVC
-//            VC.modalPresentationStyle = .fullScreen
-//           self.present(VC, animated: true)
-//        }else if usernameTxt.text == "" && passwordTxt.text == "" {
-//            errorHandel.text = "Enter Username & Password"
-//        }else{
-//            errorHandel.text = "Username or Password is Wrong , Try Again"
-//        }
-        
+        if usernameTxt.text == "" || passwordTxt.text == "" {
+            errorHandel.text = "Enter Username & Password"
+        }else {
+            errorHandel.text = ""
+            query(db: db)
+        }
     }
 }
