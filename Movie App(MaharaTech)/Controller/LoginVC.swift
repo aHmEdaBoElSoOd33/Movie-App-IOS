@@ -17,7 +17,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
         
     var db : OpaquePointer?
-    
+    var iconClick = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,18 +81,18 @@ class LoginVC: UIViewController {
                 let password = String(cString: QuaryResultsCol3)
                 
                 if usernameTxt.text == email && passwordTxt.text == password {
-                   
+                    errorHandel.text = ""
                     let userdefults = UserDefaults.standard
                     userdefults.set(true, forKey: "loginstate")
                     
                     let VC = self.storyboard?.instantiateViewController(withIdentifier: "MovieVC") as! MoviesVC
+                    VC.name = name
                     VC.modalPresentationStyle = .fullScreen
                     self.present(VC, animated: true)
                     
-                }else if usernameTxt.text == email && passwordTxt.text != password  {
-                    errorHandel.text = "Wrong Password try again"
-                }else {
-                    errorHandel.text = "Account not exist"
+                    
+                }else if  passwordTxt.text == password || usernameTxt.text != email  {
+                    errorHandel.text = "Wrong Email or Password try again"
                 }
             }
  
@@ -133,4 +133,23 @@ class LoginVC: UIViewController {
             query(db: db)
         }
     }
+    
+    
+    
+   
+    
+    @IBAction func iconAction(sender: AnyObject) {
+            if(iconClick == true) {
+                passwordTxt.isSecureTextEntry = false
+            } else {
+                passwordTxt.isSecureTextEntry = true
+            }
+
+            iconClick = !iconClick
+        }
+      
 }
+
+
+
+

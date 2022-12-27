@@ -15,7 +15,7 @@ class MoviesVC: UIViewController , UICollectionViewDelegate ,UICollectionViewDat
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
+    var name : String?
     var searchArray : [Movie] = []
     var moviesArray : [Movie] = []
     var refreshControl = UIRefreshControl()
@@ -23,10 +23,17 @@ class MoviesVC: UIViewController , UICollectionViewDelegate ,UICollectionViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        
+        showWelcomeMessage()
         GetDataFromApiMovies()
         setup()
         hideKeyboardWhenTappedAround()
+    }
+    
+    func showWelcomeMessage(){
+        let ac = UIAlertController(title: "Hello \(name ?? "There") Wish you enjoy", message: nil, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Let's Go", style: .default))
+        self.present(ac, animated: true)
+        
     }
     
     func hideKeyboardWhenTappedAround() {
