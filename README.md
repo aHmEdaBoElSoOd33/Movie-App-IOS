@@ -3,7 +3,7 @@
 
 Movie Ads App that Shows The upComing Movies using the TMDb API 
   
-LOGIN
+## LOGIN
 Authintication with SQLITE
 
 <div class="myDiv">
@@ -11,14 +11,14 @@ Authintication with SQLITE
 </div> 
  
 
-REGISTRATION 
+## REGISTRATION 
 SQLITE
 
 <div class="myDiv">
  <img src="https://user-images.githubusercontent.com/97084704/208710264-2e3196b2-8a0b-49c4-95b3-62fdedafd697.png" width="350" height="750">
 </div> 
  
-THE UPCOMING MOVIES
+## THE UPCOMING MOVIES
 Collectionview that fetch data using URLSession 
 
 <div class="myDiv">
@@ -26,13 +26,13 @@ Collectionview that fetch data using URLSession
 </div> 
  
 
-SEARCH Bar 
+## SEARCH Bar 
 <div class="myDiv">
  <img src="https://user-images.githubusercontent.com/97084704/208710571-fbc2401c-8f76-44c0-9d13-9469e12985e4.png" width="350" height="750">
 </div> 
 
-DETAILS  
-Using some Pods such As SDwebimage , Cosmos and youtube-ios-player-helper-swift 
+## DETAILS  
+### Using some Pods such As SDwebimage , Cosmos and youtube-ios-player-helper-swift 
 
 Fetch Movies posters with SDwebimage pod
 Fetch Rating with Cosmos 
@@ -46,13 +46,12 @@ Fetch Trailers with youtube-ios-player-helper-swift
  
 
 
-Reviews 
+## Reviews 
 
 <div class="myDiv">
  <img src="https://user-images.githubusercontent.com/97084704/208710571-fbc2401c-8f76-44c0-9d13-9469e12985e4.png" width="350" height="750">
 </div> 
 
-![simulator_screenshot_3BEB69B4-7605-4AAA-9122-2BA5B245C5D6](https://user-images.githubusercontent.com/97084704/208712056-2e6776c4-3a62-48c6-87cd-761b9b0c6fff.png)
 
 
 
