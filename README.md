@@ -34,9 +34,9 @@ Collectionview that fetch data using URLSession
 ## DETAILS  
 ### Using some Pods such As SDwebimage , Cosmos and youtube-ios-player-helper-swift 
 
-Fetch Movies posters with SDwebimage pod
-Fetch Rating with Cosmos 
-Fetch Trailers with youtube-ios-player-helper-swift 
+###### Fetch Movies posters with SDwebimage pod.
+###### Fetch Rating with Cosmos .
+###### Fetch Trailers with youtube-ios-player-helper-swift .
 
 <div class="myDiv">
  <img src="https://user-images.githubusercontent.com/97084704/208710675-fa260f91-20f9-447d-a94f-c764725a1fca.png" width="350" height="750">
