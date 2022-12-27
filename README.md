@@ -49,9 +49,5 @@ Collectionview that fetch data using URLSession
 ## Reviews 
 
 <div class="myDiv">
- <img src="https://user-images.githubusercontent.com/97084704/208710571-fbc2401c-8f76-44c0-9d13-9469e12985e4.png" width="350" height="750">
-</div> 
-
-
-
-
+ <img src="https://user-images.githubusercontent.com/97084704/209734444-707acd02-4f28-47e2-9350-e09a3e11a618.png" width="350" height="750">
+</div>  
