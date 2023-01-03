@@ -28,8 +28,8 @@ class RegisterVC: UIViewController {
         
         db = openDB()
         savedataRegistration.layer.cornerRadius = 5
-        //createTable(db: db)
-         //deleteFromDB(db: db)
+        createTable(db: db)
+        //deleteFromDB(db: db)
     }
     
     func openDB() -> OpaquePointer? {

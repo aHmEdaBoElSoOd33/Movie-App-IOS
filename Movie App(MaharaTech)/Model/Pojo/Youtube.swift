@@ -7,7 +7,5 @@
 
 import Foundation
 class Youtube {
-    
     var key : String?
-    
 }

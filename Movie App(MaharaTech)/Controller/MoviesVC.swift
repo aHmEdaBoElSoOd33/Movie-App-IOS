@@ -33,7 +33,6 @@ class MoviesVC: UIViewController , UICollectionViewDelegate ,UICollectionViewDat
         let ac = UIAlertController(title: "Hello \(name ?? "There") Wish you enjoy", message: nil, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Let's Go", style: .default))
         self.present(ac, animated: true)
-        
     }
     
     func hideKeyboardWhenTappedAround() {
@@ -101,6 +100,8 @@ class MoviesVC: UIViewController , UICollectionViewDelegate ,UICollectionViewDat
                     self.moviesArray.append(movieObj)
                     ///search
                     self.searchArray = self.moviesArray
+                    
+                    
                 }
                 // thread
                 DispatchQueue.main.async {
