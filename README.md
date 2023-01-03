@@ -2,6 +2,11 @@
 
 
 Movie Ads App that Shows The upComing Movies using the TMDb API 
+
+using 
+MVC Desgin pattern
+SQLlite 
+URLsession
   
 ## LOGIN
 Authintication with SQLITE
