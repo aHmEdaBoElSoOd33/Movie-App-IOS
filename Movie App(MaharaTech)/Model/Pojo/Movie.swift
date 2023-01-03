@@ -7,7 +7,6 @@
 
 import Foundation
 class Movie {
-     
     
     var id : Int?
     var overview : String?
@@ -15,6 +14,5 @@ class Movie {
     var release_date : String?
     var title : String?
     var vote_average : Double?
-   
     
 }

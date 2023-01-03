@@ -17,7 +17,6 @@ class ReviewsVC: UIViewController , UITableViewDelegate , UITableViewDataSource 
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
     }
     
     

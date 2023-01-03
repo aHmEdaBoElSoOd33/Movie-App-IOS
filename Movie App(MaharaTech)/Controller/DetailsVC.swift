@@ -34,14 +34,26 @@ class DetailsVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        GetDataFromApiYoutube()
-        GetDataFromApiReviews()
+        //GetDataFromApiYoutube()
+       // GetDataFromApiReviews()
+        GetDataFromApis()
         outlets()
         
     }
     
-    func outlets(){
+    func GetDataFromApis(){
         
+        ReviewsApi().GetDataFromApiReviews(id: (movie?.id)!) { revew in
+            self.reviewsArray = revew
+        }
+        
+        
+        YoutubeApi().GetDataFromApiYoutube(id: (movie?.id)!) { youtube in
+            self.youtubeArray = youtube
+        }
+        
+    }
+    func outlets(){
                     let url = URL(string: "https://image.tmdb.org/t/p/w185/"+(movie?.poster_path)!)
                     Poster.sd_setImage(with: url, placeholderImage: UIImage(systemName: "exclamationmark.square"))
                     movieTitle.text = movie?.title
@@ -65,81 +77,7 @@ class DetailsVC: UIViewController , UICollectionViewDelegate , UICollectionViewD
         YTcollectionView.layer.borderColor = UIColor.white.cgColor
         
     }
-    
-    
-    func GetDataFromApiReviews(){
-        let IDstring : String = String((movie?.id)!)
-       // print(type(of: IDstring))
-        let url = URL(string: "https://api.themoviedb.org/3/movie/\(IDstring)/reviews?api_key=c56cce7934377fa939c2ad5fa16d4f6d")
-        let request = URLRequest(url: url!)
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let task = session.dataTask(with: request) { (data, response, error) in
-           
-           // print("data has arrived successfully")
-           // print(data)
-            
-            do {
-                
-                let json = try JSONSerialization.jsonObject(with: data! , options: .allowFragments) as! Dictionary<String,Any>
-                
-                let dic = json["results"] as! Array<Dictionary<String,Any>>
-                
-                for rawdata in dic {
-                    let reviewObj = Review()
-                    reviewObj.name = rawdata["author"] as! String
-                    reviewObj.content = rawdata["content"] as! String
-                    self.reviewsArray.append(reviewObj)
-                    
-                }
-                
-               
-                
-                
-            }catch{
-                print(error)
-            }
-            
-        }
-        
-        
-        
-        task.resume()
-    }
-    
-    func GetDataFromApiYoutube(){
-        let IDstring : String = String((movie?.id)!)
-      
-        let url = URL(string: "https://api.themoviedb.org/3/movie/\(IDstring)/videos?api_key=c56cce7934377fa939c2ad5fa16d4f6d")
-        let request = URLRequest(url: url!)
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let task = session.dataTask(with: request) { (data, response, error) in
-           
-            
-            do {
-                
-                let json = try JSONSerialization.jsonObject(with: data! , options: .allowFragments) as! Dictionary<String,Any>
-                
-                let dic = json["results"] as! Array<Dictionary<String,Any>>
-                
-                for rawdata in dic {
-                    let videoObj = Youtube()
-                    videoObj.key = rawdata["key"] as! String
-                    self.youtubeArray.append(videoObj)
-                    
-                }
-                
-               
-            }catch{
-                print(error)
-            }
-            
-        }
-        
-        
-        
-        task.resume()
-    }
-        
+     
   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
              return youtubeArray.count

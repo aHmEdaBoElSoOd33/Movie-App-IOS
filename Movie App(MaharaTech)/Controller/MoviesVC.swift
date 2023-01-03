@@ -22,18 +22,30 @@ class MoviesVC: UIViewController , UICollectionViewDelegate ,UICollectionViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        showWelcomeMessage()
-        GetDataFromApiMovies()
+        
+        fetchApiData()
         setup()
         hideKeyboardWhenTappedAround()
+        
     }
     
-    func showWelcomeMessage(){
-        let ac = UIAlertController(title: "Hello \(name ?? "There") Wish you enjoy", message: nil, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Let's Go", style: .default))
-        self.present(ac, animated: true)
+    
+    func fetchApiData (){
+        
+        MoviesApi().GetDataFromApiMovies(completion: { (movies) in
+            print(movies)
+            self.moviesArray = movies
+            self.searchArray = self.moviesArray
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+           
+        })
+        
+       
+        
     }
+   
     
     func hideKeyboardWhenTappedAround() {
             let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
@@ -52,6 +64,7 @@ class MoviesVC: UIViewController , UICollectionViewDelegate ,UICollectionViewDat
             
             self.collectionView.reloadData()
             self.refreshControl.endRefreshing()
+            
         }
         
     }
@@ -72,51 +85,7 @@ class MoviesVC: UIViewController , UICollectionViewDelegate ,UICollectionViewDat
         searchbar.delegate = self
         
     }
-    
-    
-    
-    
-    func GetDataFromApiMovies(){
-        
-        let url = URL(string: "https://api.themoviedb.org/3/discover/movie?api_key=c56cce7934377fa939c2ad5fa16d4f6d")
-        let request = URLRequest(url: url!)
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        let task = session.dataTask(with: request) { (data, response, error) in
-            print("data has arrived successfully")
-            
-            do{
-                let json = try JSONSerialization.jsonObject(with: data!  ,options: .allowFragments) as! Dictionary<String,Any>
-                let dic = json["results"] as! Array<Dictionary<String,Any>>
-                
-                for rawData in dic {
-                    let movieObj = Movie()
-                    movieObj.id = rawData["id"] as? Int
-                    movieObj.title = rawData["title"] as? String
-                    movieObj.overview = rawData["overview"] as? String
-                    movieObj.poster_path = rawData["poster_path"] as? String
-                    movieObj.release_date = rawData["release_date"] as? String
-                    movieObj.vote_average = rawData["vote_average"] as? Double
-                    
-                    self.moviesArray.append(movieObj)
-                    ///search
-                    self.searchArray = self.moviesArray
-                    
-                    
-                }
-                // thread
-                DispatchQueue.main.async {
-                    self.collectionView.reloadData()
-                }
-                
-            }catch{
-                print(error)
-            }
-        
-        }
-        task.resume()
-        
-    }
-    
+     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return searchArray.count
@@ -163,7 +132,7 @@ extension MoviesVC : UICollectionViewDelegateFlowLayout {
 
 // search bar 
 extension MoviesVC : UISearchBarDelegate{
-    
+
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchArray = []
         for word in moviesArray{
@@ -173,9 +142,9 @@ extension MoviesVC : UISearchBarDelegate{
                 searchArray = moviesArray
             }
         }
-        
+
         self.collectionView.reloadData()
     }
-    
+
     
 }

@@ -27,7 +27,10 @@
 		E2A1F142293E331800C0547F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1F141293E331800C0547F /* Movie.swift */; };
 		E2A1F144293E477500C0547F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1F143293E477500C0547F /* MovieCell.swift */; };
 		E2AA224C2944C4EE00D61479 /* ReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA224B2944C4EE00D61479 /* ReviewsVC.swift */; };
+		E2B744202964889200D941FF /* ReviewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7441F2964889200D941FF /* ReviewsApi.swift */; };
+		E2B7442229648CFC00D941FF /* YoutubeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B7442129648CFC00D941FF /* YoutubeApi.swift */; };
 		E2CFD4892951BE5900316BD8 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFD4882951BE5900316BD8 /* RegisterVC.swift */; };
+		E2FC73EC296429FD00566A5C /* MoviesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FC73EB296429FD00566A5C /* MoviesApi.swift */; };
 		E2FFCCBB294234DF001F4D37 /* YTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FFCCBA294234DF001F4D37 /* YTCell.swift */; };
 		E2FFCCBD29423772001F4D37 /* Youtube.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FFCCBC29423772001F4D37 /* Youtube.swift */; };
 /* End PBXBuildFile section */
@@ -79,7 +82,10 @@
 		E2A1F141293E331800C0547F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E2A1F143293E477500C0547F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		E2AA224B2944C4EE00D61479 /* ReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsVC.swift; sourceTree = "<group>"; };
+		E2B7441F2964889200D941FF /* ReviewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsApi.swift; sourceTree = "<group>"; };
+		E2B7442129648CFC00D941FF /* YoutubeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeApi.swift; sourceTree = "<group>"; };
 		E2CFD4882951BE5900316BD8 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		E2FC73EB296429FD00566A5C /* MoviesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesApi.swift; sourceTree = "<group>"; };
 		E2FFCCBA294234DF001F4D37 /* YTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTCell.swift; sourceTree = "<group>"; };
 		E2FFCCBC29423772001F4D37 /* Youtube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube.swift; sourceTree = "<group>"; };
 		FF46B43FBDAEE3FE4A31AA91 /* Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig"; path = "Target Support Files/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests/Pods-Movie App(MaharaTech)-Movie App(MaharaTech)UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +197,7 @@
 		E2AA22402944BC1700D61479 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2B7442329648E4C00D941FF /* DataBase manager */,
 				E2AA22432944BCA000D61479 /* Pojo */,
 			);
 			path = Model;
@@ -230,6 +237,16 @@
 				E2FFCCBC29423772001F4D37 /* Youtube.swift */,
 			);
 			path = Pojo;
+			sourceTree = "<group>";
+		};
+		E2B7442329648E4C00D941FF /* DataBase manager */ = {
+			isa = PBXGroup;
+			children = (
+				E2FC73EB296429FD00566A5C /* MoviesApi.swift */,
+				E2B7441F2964889200D941FF /* ReviewsApi.swift */,
+				E2B7442129648CFC00D941FF /* YoutubeApi.swift */,
+			);
+			path = "DataBase manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,7 +489,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2FFCCBD29423772001F4D37 /* Youtube.swift in Sources */,
+				E2FC73EC296429FD00566A5C /* MoviesApi.swift in Sources */,
 				E22170EE29322FA400F58047 /* MoviesVC.swift in Sources */,
+				E2B7442229648CFC00D941FF /* YoutubeApi.swift in Sources */,
 				E2309E90293EB51600083E81 /* DetailsVC.swift in Sources */,
 				E2CFD4892951BE5900316BD8 /* RegisterVC.swift in Sources */,
 				E22170EA29322FA400F58047 /* AppDelegate.swift in Sources */,
@@ -480,6 +499,7 @@
 				E2A1F142293E331800C0547F /* Movie.swift in Sources */,
 				E27999DB2943A27400F1E8B4 /* Review.swift in Sources */,
 				E22EC59A2947EE6E003CD68D /* MoviesCoreData.xcdatamodeld in Sources */,
+				E2B744202964889200D941FF /* ReviewsApi.swift in Sources */,
 				E2FFCCBB294234DF001F4D37 /* YTCell.swift in Sources */,
 				E2A1F144293E477500C0547F /* MovieCell.swift in Sources */,
 				E2AA224C2944C4EE00D61479 /* ReviewsVC.swift in Sources */,
